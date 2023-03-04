@@ -1,0 +1,96 @@
+@import "fonts"
+@import "vars"
+
+header
+	position: absolute
+	z-index: 5
+	left: 0
+	top: 0
+	width: 100%
+	box-shadow: 0 0 46px 0 rgba(49, 49, 49, 0.53)
+	padding: 39px 0 31px
+	background: #fff
+	.container
+		align-items: center
+
+.list-social
+	display: flex
+	align-items: flex-start
+	li
+		margin: 0 8px 0 0
+		&:last-child
+			margin: 0
+		a
+			@include d-flex
+			border-radius: 50%
+			background: #2c7672
+			width: 29px
+			height: 29px
+			min-width: 29px
+			&:hover
+				background: $hover
+
+.btn-cabinet
+	margin: 0 23px 0 0
+	&__icon
+		width: 29px
+		margin: 0 14px 0 0
+		@include d-flex
+	
+
+.logo
+	@include d-flex
+	max-width: 230px
+	width: 100%
+
+.nav-menu
+	margin: 0 auto
+	&__close
+		margin: 0 0 20px auto
+		width: 20px
+		height: 20px
+		position: relative
+		display: none
+		align-items: center
+		justify-content: center
+		&::before, &::after
+			content: ''
+			position: absolute
+			left: 0
+			top: 10px
+			width: 100%
+			height: 2px
+			background: $accent
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(135deg)
+
+.menu
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 13px
+	letter-spacing: 0.07px
+	font-weight: bold
+	li
+		margin: 0 25px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #9c9c9c
+			&:hover
+				color: $accent
+
+.btn-burger
+	width: 33px
+	display: none
+	span
+		margin: 0 0 5px
+		background: #b2d2d0
+		opacity: 0.5
+		height: 3px
+		display: block
+		&:last-child
+			margin: 0
+

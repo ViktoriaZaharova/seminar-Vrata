@@ -1,0 +1,656 @@
+@import "fonts"
+@import "vars"
+
+// main
+.main
+	position: relative
+
+.main-slider-bg-wrapper
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: -1
+	.slick-list
+		height: 100%
+	.slick-track
+		height: 100%		
+
+// .js-tab-content
+// 	display: none
+// 	transition: .3s ease
+// 	&.active
+// 		display: block
+
+.main-slider__item
+	padding: 249px 0 301px
+	position: relative
+	z-index: 1
+	color: #fff
+	.container
+		flex-direction: column
+	.date
+		margin: 88px 0 47px
+
+.author-seminar
+	font-size: 60px
+	text-shadow: 0.5px 0.9px 95px #09021b
+	line-height: 1
+	letter-spacing: 0.3px
+
+.date
+	background: #297470
+	border-radius: 10px
+	padding: 9px 42px
+	letter-spacing: 0.17px
+	font-size: 34px
+	width: fit-content
+
+.main-slider__bg
+	position: absolute
+	z-index: -1
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	object-fit: cover
+
+
+.main-slider-nav
+	max-width: 300px
+	width: 100%
+	position: absolute
+	top: 0
+	right: 0
+	height: 100%
+	padding: 0 0 300px
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	justify-content: flex-end
+	color: #fff
+	z-index: 1
+	text-align: right
+	.slide
+		margin: 40px 0 0 0
+	&:before
+		content: ''
+		position: absolute
+		right: 15px
+		top: 131px
+		width: 1px
+		background: #f1f1f1
+		opacity: 0.5
+		height: calc(100% - 160px - 500px)
+	&:after
+		content: ''
+		position: absolute
+		right: 15px
+		bottom: 176px
+		width: 1px
+		background: #f1f1f1
+		opacity: 0.5
+		height: 118px
+	&__item
+		margin: 0 15px 0
+		letter-spacing: 0.09px
+		font-size: 18px
+		font-weight: 300
+		cursor: pointer
+		transition: .3s ease
+		position: relative
+		padding: 0 23px 0 0
+		color: rgba(255, 255, 255, 0.6)
+		&:last-child
+			margin: 0 15px 0
+			&:before
+				display: none
+		&:before
+			content: ''
+			position: absolute
+			width: 1px
+			background: #f1f1f1
+			opacity: 0.5
+			right: 0
+			height: 32px
+			bottom: -32px
+	.slick-current		
+		.main-slider-nav__item
+			opacity: 1
+			font-weight: bold
+			color: #fff
+			.js-tab-trigger-icon
+				opacity: 1
+				&:before
+					opacity: 1
+
+.js-tab-trigger-icon
+	width: 24px
+	height: 24px
+	border: solid 2px #fff
+	border-radius: 50%
+	right: -23px
+	top: 50%
+	transform: translate(-50%,-50%)
+	position: absolute
+	opacity: 0.5
+	&:before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 13px
+		height: 13px
+		border-radius: 50%
+		background: #fff
+		opacity: 0
+
+.slick-vertical .slick-slide
+	border: none
+
+// main end
+
+// courses	
+.courses
+	margin: 62px 0 100px
+	h2
+		margin: 0 auto 84px
+
+.course-card
+	margin: 0 0 32px
+	width: calc(33.33% - 11px)
+	position: relative
+	overflow: hidden
+	z-index: 1
+	color: #fff
+	border-radius: 35px
+	text-align: center
+	padding: 44px 20px 46px
+	font-size: 24px
+	line-height: 1.2
+	span
+		display: block
+	&__bg
+		z-index: -1
+		position: absolute
+		left: 0
+		top: 0
+		object-fit: cover
+		width: 100%
+		height: 100%
+	&:hover
+		color: $hover
+		.date
+			color: #fff
+	&__author
+		display: flex
+		flex-direction: column
+		align-items: center
+		font-size: 30px
+		letter-spacing: 0.15px
+		max-width: 300px
+		margin: 0 auto
+		&-title
+			letter-spacing: 0.18px
+			font-size: 36px
+			font-weight: bold
+			margin: 10px auto
+	.date
+		margin: 226px auto 45px
+		font-size: 30px
+
+.link-details
+	text-decoration: underline
+	text-transform: uppercase
+	letter-spacing: 0.12px
+	font-size: 24px
+	font-weight: bold
+
+// courses end	
+
+// learn	
+.learn
+	margin: 0 0 187px
+	.row
+		position: relative
+	h2
+		margin: 0 auto 170px
+
+.learn-image
+	position: absolute
+	top: -270px
+	left: 49%
+	transform: translate(-50%,0)
+	@include d-flex
+	min-width: 1438px
+	z-index: -1
+
+.learn-content
+	max-width: 450px
+	line-height: 1.1
+	h3
+		color: $accent
+		margin: 0 0 86px
+		letter-spacing: -0.83px
+		font-size: 55px
+		font-weight: bold
+		text-transform: uppercase
+	.box-text
+		font-weight: 300
+		max-width: 375px
+
+.learn-text
+	max-width: 400px
+	font-weight: 300
+	line-height: 1.1
+
+.list-decor
+	margin: 0 0 73px
+	li
+		position: relative
+		margin: 0 0 15px
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			left: -58px
+			top: 7px
+			width: 35px
+			min-width: 35px
+			height: 23px
+			background: url('../img/tg-icon.png') no-repeat center
+			background-size: 100%
+			@include d-flex
+// learn	end
+
+// products	
+.products
+	padding: 240px 0
+	background: url('../img/bg2.png') no-repeat center
+	background-size: cover
+	h2
+		color: #fff
+		margin: 0 auto 83px
+
+.products-card
+	width: calc(50% - 27px)
+	background: #fff
+	border-radius: 35px
+	box-shadow: 0.5px 0.9px 60px 0 rgba(9, 2, 27, 0.25)
+	padding: 80px 73px 84px
+	text-align: center
+	.btn
+		margin: 74px auto 0
+	&__icon
+		margin: 0 auto 45px
+		@include d-flex
+	h3
+		margin: 20px auto 30px
+		font-weight: bold
+		color: $accent
+		font-size: 48px
+
+// products end	
+
+// time-table
+.mybutton
+	display: flex
+	align-items: center
+	justify-content: center
+
+.time-table
+	margin: 59px 0 150px
+	h2
+		margin: 0 auto 87px
+	.main-heading
+		padding: 50px 0 0
+		border: 0
+	*
+		line-height: initial
+	.time-table__block
+		font-size: 16px
+		border-spacing: 10px
+		-webkit-box-shadow: 1px 1px 76px rgba(20, 66, 64, 0.95)
+		box-shadow: 1px 1px 76px rgba(20, 66, 64, 0.95)
+	tr
+		&:first-of-type
+			background: #87b1ac
+			color: #fff
+		&:nth-of-type(n + 1)
+			td
+				&:first-of-type
+					a
+						color: #22726e
+						-webkit-transition: ease-out .3s
+						transition: ease-out .3s
+						&:hover
+							color: #666
+						.special
+							color: #d44074
+				&:last-of-type
+					a
+						display: flex
+						align-items: center
+						justify-content: center
+						min-height: 28px
+						margin: 5px
+						padding: 3px 10px
+						text-align: center
+						color: #f9f9f9
+						background-color: #22726e
+						-webkit-border-radius: 15px
+						border-radius: 15px
+						-webkit-transition: ease-out .3s
+						transition: ease-out .3s
+						box-shadow: none
+						&:hover
+							background-color: #22726e
+							-webkit-box-shadow: -2px 6px 22px 0 rgba(0, 0, 0, 0.75)
+							box-shadow: -2px 6px 22px 0 rgba(0, 0, 0, 0.75)
+	th
+		padding: 10px 5px
+
+.time-table td a,
+.time-table td div
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	border: 0
+	-webkit-justify-content: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	min-height: 53px
+	text-align: center
+	background: #fff
+	color: #777
+	// margin: 3px
+	padding: 10px 15px
+	margin: 0 auto
+	width: calc(100% - 6px)
+	margin: 0 0 6px
+
+// time-table end
+
+// .about
+.about
+	margin: 0 0 60px
+	.box-text
+		line-height: 1.18
+		letter-spacing: 0.14px
+		text-align: center
+		p
+			margin: 0 0 30px
+		h3
+			color: $accent
+			letter-spacing: 0.18px
+			font-size: 36px
+			font-weight: bold
+
+.about-decor
+	margin: 50px auto
+	position: relative
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	&::before, &::after
+		content: ''
+		position: absolute
+		top: 50%
+		height: 2px
+		background: #428581
+		transform: translate(0, -50%)
+		width: calc(50% - 50px)
+	&:before
+		left: 0
+	&:after
+		right: 0
+
+// .about end
+
+// records	
+.records
+	background: url('../img/bg3.png') no-repeat center
+	background-size: cover
+	padding: 233px 0 219px
+	position: relative
+	z-index: 2
+	h2
+		margin: 0 auto 86px
+
+.records-card
+	margin: 0 0 86px
+	width: calc(33.33% - 22px)
+	padding: 322px 23px 25px
+	position: relative
+	z-index: 1
+	border-radius: 35px
+	overflow: hidden
+	display: flex
+	flex-direction: column
+	align-items: center
+	color: #4b494a
+	font-size: 25px
+	font-weight: bold
+	text-align: center
+	&:hover
+		color: $accent
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+		z-index: -1
+	&__body
+		margin: 24px auto 0
+		width: 100%
+		min-height: 180px
+		padding: 45px
+		border-radius: 15px
+		background: rgba(#fff, .9)
+		display: flex
+		align-items: center
+		justify-content: center
+
+// records	end
+
+// masters
+.masters
+	padding: 224px 0 245px
+	background: url('../img/bg4.png') no-repeat center
+	background-size: cover
+	position: relative
+	z-index: 1
+	margin: -160px 0 -210px
+	h2
+		color: #fff
+		margin: 0 auto 68px
+
+.masters-card
+	width: 100%
+	max-width: 408px
+	min-height: 548px
+	margin: 0 0 66px
+	position: relative
+	z-index: 1
+	text-align: center
+	font-size: 23px
+	&:nth-child(2)
+		.masters-card__photo
+			img
+				margin: 0 auto 80px
+	&__body
+		display: flex
+		flex-direction: column
+		align-items: center
+		mix-blend-mode: soft-light
+		border-radius: 25px
+		position: relative
+		z-index: 1
+		width: 100%
+		color: #4b494a
+		&:hover
+			color: $accent
+	&__photo
+		width: 100%
+		height: 453px
+		@include d-flex
+		position: relative
+		z-index: 1
+		background: url('../img/overlay1.png') no-repeat center top
+		background-size: 553px
+		margin: 0 auto -120px
+	&__info
+		width: 100%
+		min-height: 204px
+		border-radius: 25px
+		box-shadow: 0 0 73px 0 rgba(9, 2, 27, 0.31)
+		padding: 33px 35px 56px
+		background: url('../img/bg-info-master.png') no-repeat center top
+		background-size: cover
+		position: relative
+		z-index: 2
+		&::before, &:after
+			content: ''
+			position: absolute
+			background: $accent
+			height: 3px
+			bottom: 23px
+			width: calc(50% - 88px)
+		&::before
+			left: 40px
+		&:after
+			right: 40px
+
+	&__name
+		font-size: 28px
+		font-weight: bold
+		margin: 0 auto 10px
+		display: block
+		text-transform: uppercase
+		color: $accent
+
+.vk-link
+	position: absolute
+	z-index: 3
+	left: 50%
+	transform: translate(-50%,0)
+	bottom: -32.5px
+
+// masters end
+
+// blog
+.blog
+	position: relative
+	z-index: 1
+	padding: 238px 0 105px
+	background: url('../img/bg5.png') no-repeat center top
+	background-size: cover
+	h2
+		margin: 0 auto 85px
+
+.blog-card
+	margin: 0 0 40px
+	width: calc(33.33% - 24px)
+	&__image
+		width: 100%
+		position: relative
+		z-index: 1
+		box-shadow: 0 0 25px 0 rgba(26, 48, 48, 0.25)
+		border-radius: 14px
+		margin: 0 0 24px
+		img
+			width: 100%
+		&-title
+			min-width: 243px
+			mix-blend-mode: lighten
+			border-radius: 10px
+			background-color: #f9f9f9
+			text-align: center
+			@include d-flex
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			letter-spacing: 0.11px
+			font-size: 22.5px
+			font-weight: 300
+			color: #3c6664
+			z-index: 1
+			padding: 10px 27px
+			white-space: nowrap
+			box-shadow: 0 0 35px 0 rgba(#fff, 0.75)
+	&__link
+		margin: 28px 0 0 auto
+		color: $accent
+		letter-spacing: 0.08px
+		font-size: 16.5px
+		font-weight: bold
+		text-transform: uppercase
+		&:hover
+			color: #000
+	.box-text
+		color: #666
+		letter-spacing: 0.1px
+		font-size: 19px
+		font-weight: 300
+// blog end
+
+// contacts
+.contacts
+	padding: 86px 0
+	background: url('../img/contact-bg.jpg') no-repeat center
+	background-size: cover
+	color: #fff
+	h2
+		margin: 0 auto 88px
+		color: #fff
+	.row
+		justify-content: center	
+
+.contacts-card
+	max-width: 515px
+	width: 100%
+	position: relative
+	z-index: 1
+	padding: 48px 60px 53px
+	border: 2px solid #fff
+	border-top: none
+	font-size: 24px
+	font-weight: 300
+	line-height: 1.25
+	letter-spacing: 0.12px
+	text-align: center
+	margin: 0 auto 43.5px
+	a
+		color: #fff
+		font-weight: bold
+	.font-normal
+		font-weight: 300
+	&::before, &:after
+		content: ''
+		position: absolute
+		top: 0
+		width: calc(50% - 40px)
+		height: 2px
+		background: #fff
+	&::before
+		left: 0
+	&:after
+		right: 0
+	&__icon
+		position: absolute
+		left: 50%
+		transform: translate(-50%,0)
+		top: -20px
+		@include d-flex
+
+
+// contacts end
