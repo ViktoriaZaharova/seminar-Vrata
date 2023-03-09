@@ -1,7 +1,5 @@
 $('.main-slider-bg-wrapper').slick({
 	slidesToShow: 1,
-	// fade: false,
-	// cssEase: 'ease-out',
 	arrows: false,
 	infinite: false,
 });
@@ -11,14 +9,11 @@ $('.main-slider').slick({
 	infinite: false,
 	arrows: false,
 	swipe: false,
-	// fade: true,
 	responsive: [
 		{
 			breakpoint: 1200,
 			settings: {
 				slidesToShow: 1,
-				// autoplay: true,
-				// autoplaySpeed: 2000,
 				asNavFor: '.main-slider-bg-wrapper'
 			}
 		}

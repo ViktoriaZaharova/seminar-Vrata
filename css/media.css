@@ -809,6 +809,10 @@
   .copyright {
     max-width: 140px;
   }
+  .time-table td a strong br,
+  .time-table td div strong br {
+    display: block;
+  }
 }
 @media only screen and (max-width: 480px) {
   .products {

@@ -500,6 +500,10 @@
   width: calc(100% - 6px);
   margin: 0 0 6px;
 }
+.time-table td a strong br,
+.time-table td div strong br {
+  display: none;
+}
 
 .about {
   margin: 0 0 60px;
