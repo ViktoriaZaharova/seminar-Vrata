@@ -69,6 +69,12 @@
   .main-slider-nav {
     display: none;
   }
+  .main-slider .slick-slide {
+    display: none !important;
+  }
+  .main-slider .slick-slide.slick-current {
+    display: block !important;
+  }
   .course-card {
     width: calc(50% - 11px);
   }
@@ -246,6 +252,9 @@
   footer .btn-cabinet__icon {
     width: 24px;
     margin: 0 12px 0 0;
+  }
+  .footer-box-info {
+    min-width: auto;
   }
   .footer-box-wrapper {
     -webkit-box-orient: vertical;
@@ -880,6 +889,7 @@
     font-size: 15px;
     letter-spacing: 0.09px;
     padding: 26px 20px 28px;
+    max-width: 293px;
   }
   .course-card__author {
     font-size: 15px;
@@ -946,6 +956,7 @@
   .products-card {
     padding: 35px 30px;
     font-size: 14px;
+    max-width: 300px;
   }
   .products-card h3 {
     font-size: 24px;
@@ -980,6 +991,12 @@
   }
   .footer-box-wrapper .footer-box:first-child {
     min-width: 170px;
+  }
+  .time-table td a, .time-table td div {
+    min-height: auto;
+    padding: 5px 3px;
+    margin: 0 0 1px;
+    width: calc(100% - 3px);
   }
 }
 @media only screen and (max-width: 370px) {

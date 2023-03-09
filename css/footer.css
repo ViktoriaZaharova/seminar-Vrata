@@ -26,7 +26,7 @@ footer {
   letter-spacing: -0.17px;
 }
 footer .logo {
-  margin: 0 auto 0 0;
+  margin: 0 74px 0 0;
   max-width: 241px;
 }
 footer .list-social {
@@ -44,6 +44,9 @@ footer .container {
           align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-box {
@@ -61,6 +64,10 @@ footer .container {
 }
 .footer-box .link-document:hover {
   color: #000;
+}
+
+.footer-box-info {
+  min-width: 250px;
 }
 
 .copyright {
@@ -99,5 +106,4 @@ footer .container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 100%;
 }
